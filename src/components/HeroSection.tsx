@@ -19,7 +19,21 @@ const HeroSection = () => {
                 className="relative"
                 priority
               />
+
+              {/* small greeting with curve arrow */}
+              <div className="select-none pointer-events-none absolute -top-8 -right-6 md:-top-16 md:-right-40 text-xs text-white/70">
+                <div className="relative flex items-center justify-end">
+                  <div className="relative w-16 h-6 md:w-24 md:h-16">
+                    <Image 
+                    src="/images/hero-arrow.png"
+                    alt="arrow image" fill
+                    className="object-contain scale-x-100 -rotate-6"
+                    priority/>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
 
           {/* headline */}
