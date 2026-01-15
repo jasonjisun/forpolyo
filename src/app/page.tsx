@@ -1,17 +1,21 @@
-import HeroSection from "@/components/HeroSection";
+import HereSection from "@/components/HeroSection";
+import WorkExperience from "@/components/WorkExperience";
+import TechStack from "@/components/TechStack";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 
 const Home = () => {
   return (
-  <>
-<main className="max-w-7xl mx-auto px-6 lg:px-8">
-  <HeroSection />
-  <div id="about" className="min-h-screen py-24">About</div>
-  <div id="lab" className="min-h-screen py-24">Lab</div>
-  <div id="projects" className="min-h-screen py-24">Projects</div>
-  <div id="contact" className="min-h-screen py-24">Contact</div>
-</main>
-  </>
+    <>
+      <main className="max-w-7xl mx-auto px-6 lg:px-8">
+        <HereSection />
+        <WorkExperience />
+        <TechStack />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+    </>
   );
-}
+};
 
-export default Home
+export default Home;

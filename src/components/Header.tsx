@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { DiVim } from "react-icons/di";
 import { HiBars3 } from "react-icons/hi2";
 
 const Header = () => {
