@@ -84,47 +84,9 @@ const HeroSection = () => {
               development with a strong appreciation for DevOps workflows.
             </p>
           </div>
-        </ScrollReveal>
+        </div>
 
-        {/* Typewriter + description */}
-        <ScrollReveal
-          delay={0.15}
-          className="mt-16 max-w-3xl text-center md:text-left"
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight mb-4">
-            {mounted && (
-              <Typewriter
-                words={[
-                  "I'm a Full-Stack Developer",
-                  "Aspiring Devops and Cloud Engineer",
-                  "I never stop learning new things",
-                ]}
-                typeSpeed={65}
-                deleteSpeed={0}
-                delaySpeed={600}
-                cursor
-                cursorStyle="|"
-                loop={0}
-              />
-            )}
-          </h2>
-
-          <p className="text-white/70 text-sm md:text-base mb-4">
-            Currently, I work as a full-stack freelancer, building innovative
-            web applications and crafting digital products that users can fully
-            utilize and feel satisfied with.
-          </p>
-
-          <p className="text-white/70 text-sm md:text-base leading-7">
-            As a computer science enthusiast, I’m deeply passionate about the
-            tech industry—constantly learning, exploring new innovations, and
-            connecting with inspiring communities. I thrive on mentorship,
-            attending tech events, and collaborating with like-minded people who
-            push the boundaries of technology. I’m dedicated, motivated, and
-            endlessly excited about creating solutions that truly make an
-            impact.
-          </p>
-        </ScrollReveal>
+        {/* role and description */}
       </div>
     </section>
   );
