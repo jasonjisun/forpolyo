@@ -84,7 +84,7 @@ const HeroSection = () => {
               development with a strong appreciation for DevOps workflows.
             </p>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* role and description */}
       </div>
