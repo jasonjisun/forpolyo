@@ -96,7 +96,7 @@ const HeroSection = () => {
               <Typewriter
                 words={[
                   "I'm a Full-Stack Developer",
-                  "Aspiring Devops and Cloud Engineer",
+                  "Aspiring Devops Cloud Engineer",
                   "I never stop learning new things",
                 ]}
                 typeSpeed={65}
