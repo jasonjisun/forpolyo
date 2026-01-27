@@ -8,7 +8,7 @@ export async function sendContactEmail(data: ContactPayload) {
     from: "Portfolio <onboarding@resend.dev>",
     to: process.env.CONTACT_RECEIVER_EMAIL as string,
     subject: `[Portfolio] ${data.subject}`,
-    replyTo: data.email,
+    reply_to: data.email,
     html: `
       <h2>New Contact Message</h2>
       <p><strong>Name:</strong> ${data.name}</p>
