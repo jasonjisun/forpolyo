@@ -2,10 +2,11 @@ import { Resend } from "resend";
 import { ContactPayload } from "@/types/contact";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const fromEmail = process.env.RESEND_FROM_EMAIL || "Portfolio <onboarding@resend.dev>";
 
 export async function sendContactEmail(data: ContactPayload) {
   return resend.emails.send({
-    from: "Portfolio <onboarding@resend.dev>",
+    from: fromEmail,
     to: process.env.CONTACT_RECEIVER_EMAIL as string,
     subject: `[Portfolio] ${data.subject}`,
     reply_to: data.email,
